@@ -1,0 +1,42 @@
+body {
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    font-family: Arial, sans-serif;
+}
+
+#game {
+    width: 300px;
+    height: 300px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.cell:hover {
+    background-color: #f1f1f1;
+    transform: scale(1.05);
+}
+
+.cell.x {
+    color: #ff6b6b;
+}
+
+.cell.circle {
+    color: #4ecdc4;
+}
+
+#restartButton {
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#restartButton:hover {
+    background-color: #ff4757;
+    transform: scale(1.05);
+}
